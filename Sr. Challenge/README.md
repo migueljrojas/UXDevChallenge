@@ -9,7 +9,7 @@ The client has asked you to create an user experience as a lading page structure
 * At least one animation made with CSS only.
 * Perform a Global Project Optimization before submit it.
 
-##Tips
+## Tips
 * You can deliver everything else you consider necessary to support your solution.
 * Consider using CSS rather than JS for motion and interaction solutions.
 * Pay special attention to the details.

@@ -6,8 +6,7 @@ The client has asked you to create an user experience as a lading page structure
 ## Deliverables
 * Complete project files working on Chrome, Safari, Firefox and Edge, all of them on the latest version and the previous one.
 * Integrate a social media shared counts using AJAX for each of the major ones, such as Facebook, Twitter, Instagram and LinkedIn. (http://docs.sharedcount.com/).
-* At least one animation made with CSS only.
-* Perform a some project optimizations that you may consider importante before submit it.
+* Perform a some project optimizations that you may consider important before submit it.
 
 ## Tips
 * You can deliver everything else you consider necessary to support your solution.

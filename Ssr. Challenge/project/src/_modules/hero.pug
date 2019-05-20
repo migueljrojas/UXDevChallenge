@@ -1,0 +1,34 @@
+section.hero
+  .hero__container
+    h1.hero__title UX Challenge
+    
+    .hero__slider
+      .hero__slide.js-active
+        .hero__slide-block.hero__slide-block--left
+          img.hero__slide-img(src="images/slide-1-left.jpg", data-clip="0 100%, 0 0, 100% 0, 61.5% 100%")
+          a.hero__slide-price(href="#") $269 buy
+          ul.hero__slide-color-sample
+            li._black
+            li._green
+        .hero__slide-block.hero__slide-block--right
+          img.hero__slide-img(src="images/slide-1-right.jpg", data-clip="38.5% 0, 100% 0, 100% 100%, 0 100%")
+          a.hero__slide-details(href="#") Details
+
+      .hero__slide
+        .hero__slide-block.hero__slide-block--left
+          img.hero__slide-img(src="images/slide-2-left.jpg", data-clip="0 100%, 0 0, 100% 0, 61.5% 100%")
+          a.hero__slide-price(href="#") $280 buy
+          ul.hero__slide-color-sample
+            li._black
+            li._brown
+        .hero__slide-block.hero__slide-block--right
+          img.hero__slide-img(src="images/slide-2-right.jpg", data-clip="38.5% 0, 100% 0, 100% 100%, 0 100%")
+          a.hero__slide-details(href="#") Details
+    
+    .hero__slider-controls
+      button.hero__slider-button.js-active
+        span Gravity Black
+        ._hover
+      button.hero__slider-button
+        span Classic Brown
+        ._hover

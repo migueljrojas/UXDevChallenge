@@ -1,0 +1,29 @@
+$sm-min: 768px;
+$md-min: 992px;
+
+@mixin mq($class, $mode: false) {
+    @if $class == xs {
+        @media ( max-width: $sm-min - 1px ) { @content; }
+    }
+
+    @else if $class == sm {
+        @if $mode == only {
+            @media ( min-width: $sm-min ) and ( max-width: $md-min - 1px ) { @content; }
+        }
+        @else {
+            @media ( min-width: $sm-min ) { @content; }
+        }
+    }
+
+    @else if $class == md {
+        @media ( min-width: $md-min ) { @content; }
+    }
+
+    @else {
+        @warn "Breakpoint mixin supports: xs, sm, md";
+    }
+}
+
+@mixin customMq($min, $max:1920px) {
+    @media (min-width: $min) and (max-width: $max) { @content; }
+}

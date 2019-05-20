@@ -1,0 +1,66 @@
+$columns: 12;
+$gutter: 30px;
+
+@mixin container($type: regular) {
+  padding: 0 15px;
+  margin: auto;
+  width: 100%;
+  
+  @if $type == regular {
+    max-width: 1170px;
+  }
+}
+
+.container {
+  @include container();
+}
+
+.row {
+  margin-left: -#{$gutter / 2};
+  margin-right: -#{$gutter / 2};
+  display: flex;
+  flex-wrap: wrap;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+}
+
+@function column-width($col) {  
+ @return percentage($col/$columns);  
+}
+
+[class^="col-"] {
+  padding-left: #{$gutter / 2};
+  padding-right: #{$gutter / 2};
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: column-width($i);
+  };
+}
+
+@for $i from 1 through $columns {
+  .col-sm-#{$i} {
+    @include mq(sm) {
+      width: column-width($i);
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .col-md-#{$i} {
+    @include mq(md) {
+      width: column-width($i);
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      title Making Sense Test
+      meta(name='description', content= 'This is a technical test project for making sense')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      link(rel='stylesheet', href='styles/main.css')
+      link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.2/css/brands.css" integrity="sha384-i2PyM6FMpVnxjRPi0KW/xIS7hkeSznkllv+Hx/MtYDaHA5VcF0yL3KVlvzp8bWjQ", crossorigin="anonymous")
+      link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css" integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J", crossorigin="anonymous")
+
+  body
+    main
+      include _modules/hero
+      include _modules/shared-count
+      include _modules/post
+
+    script(src='./scripts/main.js')

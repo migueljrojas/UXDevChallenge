@@ -1,0 +1,53 @@
+.shared-count {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background: #f2f2f2;
+
+  @include mq(sm) {
+    padding: 15px 0;
+  }
+
+  @include mq(md) {
+    padding: 20px 0;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__box {
+    padding: 5px;
+    color: $lightText;
+    width: 80px;
+    text-align: center;
+
+    i {
+      font-size: 1.6rem;
+    }
+
+    span {
+      margin-top: 5px;
+      display: block;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-family: $altFont;
+    }
+
+    &--facebook {
+      background: $facebook;
+    }
+
+    &--twitter {
+      background: $twitter;
+    }
+
+    &--linkedin {
+      background: $linkedin;
+    }
+
+    &--instagram {
+      background: $instagram;
+    }
+  }
+}

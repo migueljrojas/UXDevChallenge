@@ -1,0 +1,3 @@
+@mixin transition($prop: all, $d: $transitionDuration, $e: $easing) {
+  transition: $prop $d $e;
+}

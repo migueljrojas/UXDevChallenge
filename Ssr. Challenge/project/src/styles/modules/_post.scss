@@ -1,0 +1,75 @@
+.post {
+  padding: 7.5% 0;
+
+  &__title {
+    font-weight: 600;
+    text-align: left;
+    font-size: 7vmin;
+    margin: 0 0 8%;
+
+    @include mq(sm) {
+      text-align: center;
+      font-size: 4.5vmin;
+      margin: 0 0 7%;
+    }
+
+    @include mq(md) {
+      font-size: 3.6rem;
+    }
+  }
+
+  &__subtitle {
+    text-align: left;
+    font-size: 4.5vmin;
+    margin: 0 0 12%;
+    line-height: 1.7;
+
+    @include mq(sm) {
+      text-align: center;
+      font-size: 2.5vmin;
+      margin: 0 0 10%;
+    }
+
+    @include mq(md) {
+      font-size: 2rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+    height: 0;
+    padding-bottom: 50%;
+    overflow: hidden;
+    margin-bottom: 10%;
+
+    @include mq(sm) {
+      margin-bottom: 4%;
+    }
+
+    img {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    font-size: 4vmin;
+    margin: 0;
+    margin-bottom: 10%;
+    line-height: 1.9;
+    widows: 3;
+
+    @include mq(sm) {
+      font-size: 2.2vmin;
+      margin-bottom: 4%;
+    }
+
+    @include mq(md) {
+      margin-bottom: 4%;
+      font-size: 1.8rem;
+    }
+  }
+}

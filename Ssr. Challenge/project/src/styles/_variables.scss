@@ -1,0 +1,23 @@
+$white: #fff;
+$black: #000;
+$green: #5da552;
+$darkGray: #333;
+// Social colors
+$facebook: #1877f2;
+$twitter: #1da1f2;
+$instagram: #c32aa3;
+$linkedin: #007bb5;
+
+$primary: $darkGray;
+$accent: $green;
+$lightText: $white;
+$darkText: $primary;
+
+$easing: cubic-bezier(.785, .135, .15, .86);
+$transitionDuration: .5s;
+$animationDuration: .5s;
+
+$skewAngle: -30deg;
+
+$mainFont: 'Open Sans', sans-serif;
+$altFont: 'Montserrat', sans-serif;

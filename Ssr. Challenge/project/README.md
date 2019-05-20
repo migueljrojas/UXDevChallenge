@@ -1,5 +1,10 @@
 # Ssr. UX Developer Challenge!
 
+## TLDR
+* Deliverables are in `dist` folder
+* If you want to check the source code is in `src` folder
+* To build the project locally clone it and run `npm install && npm start`
+
 ## Description
 I started by setting up an static generator since that setup would give me most of the deliverable requirements from the beginning. I used gulp to run the tasks that would wrap up everything i needed.
 
